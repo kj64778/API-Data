@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-19T15:54:33 IST" name="Default suite" finished-at="2023-08-19T15:54:33 IST" duration-ms="318">
+    <groups>
+    </groups>
+    <test started-at="2023-08-19T15:54:33 IST" name="Default test" finished-at="2023-08-19T15:54:33 IST" duration-ms="318">
+      <class name="com.java.api_demo.JsonCompleteDataStored">
+        <test-method signature="demo()[pri:0, instance:com.java.api_demo.JsonCompleteDataStored@1af2d44a]" started-at="2023-08-19T15:54:33 IST" name="demo" finished-at="2023-08-19T15:54:33 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo -->
+        <test-method signature="getSingleUser_data()[pri:0, instance:com.java.api_demo.JsonCompleteDataStored@1af2d44a]" started-at="2023-08-19T15:54:33 IST" name="getSingleUser_data" finished-at="2023-08-19T15:54:33 IST" duration-ms="6" status="FAIL">
+          <exception class="com.google.gson.JsonSyntaxException">
+            <message>
+              <![CDATA[com.google.gson.stream.MalformedJsonException: Unterminated object at line 1 column 87 path $.avatar]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Unterminated object at line 1 column 87 path $.avatar
+at com.google.gson.internal.Streams.parse(Streams.java:61)
+at com.google.gson.JsonParser.parseReader(JsonParser.java:102)
+at com.google.gson.JsonParser.parseReader(JsonParser.java:70)
+at com.google.gson.JsonParser.parseString(JsonParser.java:51)
+at com.java.api_demo.JsonCompleteDataStored.getSingleUser_data(JsonCompleteDataStored.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.google.gson.stream.MalformedJsonException: Unterminated object at line 1 column 87 path $.avatar
+at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1659)
+at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:500)
+at com.google.gson.stream.JsonReader.hasNext(JsonReader.java:422)
+at com.google.gson.internal.bind.TypeAdapters$28.read(TypeAdapters.java:779)
+at com.google.gson.internal.bind.TypeAdapters$28.read(TypeAdapters.java:725)
+at com.google.gson.internal.Streams.parse(Streams.java:49)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.google.gson.JsonSyntaxException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleUser_data -->
+      </class> <!-- com.java.api_demo.JsonCompleteDataStored -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
